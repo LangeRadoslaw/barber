@@ -1,0 +1,125 @@
+@import 'colors';
+@import 'animation';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-padding-top: 82px;
+}
+
+body {
+	position: relative;
+	background-color: $secondary-color;
+}
+
+// NAWIGACJA
+
+nav {
+	z-index: 2;
+	.navbar-brand {
+		font-size: 24px;
+		color: $third-color;
+		font-weight: bold;
+		transition: color 0.3s;
+	}
+	.nav-link {
+		color: $third-color;
+		transition: color 0.3s;
+	}
+	span {
+		color: $primary-color;
+	}
+	.nav-link:hover,
+	.navbar-brand:hover {
+		color: $primary-color;
+	}
+	.active {
+		color: $primary-color !important;
+	}
+	.fa-bars {
+		padding: 10px;
+	}
+}
+
+#navbarNavAltMarkup {
+	.active {
+		color: $primary-color;
+	}
+}
+
+// HEADER
+
+.header {
+	.shadow-bg {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/fotele-i-motor.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+
+	.btn-outline-light {
+		text-transform: uppercase;
+		border-color: $third-color;
+	}
+	.btn-outline-light:hover {
+		color: $secondary-color;
+		background-color: $primary-color;
+		border-color: $secondary-color;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		font-size: 40px;
+		color: $third-color;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding: 10px;
+	text-align: center;
+	color: $third-color;
+
+	h1 {
+		margin-bottom: 5px;
+		text-shadow: 3px 3px 5px #000;
+		color: $third-color;
+		// transition: 0.5s;
+	}
+
+	span {
+		text-transform: uppercase;
+		color: $primary-color;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+#aboutus {
+	h2 {
+		color: $primary-color;
+		text-align: center;
+	}
+}
+.space {
+	height: 1000px;
+}
